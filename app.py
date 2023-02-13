@@ -18,11 +18,14 @@ st.subheader("Hi, I am Faris")
 st.title("A really bored guy......")
 st.write("Hoaaahmmmm")
 
+# ---- table with write() function ----
 st.write("Here's our first attempt at using data to create a table:")
 st.write(df)
 
-st.dataframe(dataframe.style.highlight_max(axis=0))
+# ---- table with dataframe() function formatted ----
+st.dataframe(dataframe.style.highlight_max(axis=0)) # max value in each column are highlighted
 
+# ---- table with table() function ----
 st.table(dataframe)
 
 
